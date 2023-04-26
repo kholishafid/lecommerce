@@ -4,7 +4,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  position: sticky;
+  position: sticky !important;
   top: 0;
 }
 
