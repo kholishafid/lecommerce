@@ -25,6 +25,7 @@ class ProductList extends HTMLElement {
   }
 
   renderSkeleton() {
+    this.setAttribute("class", "product-list-layout");
     [...Array(12)].map(() => {
       const skeleton = document.createElement("div");
       skeleton.classList.add("product-skeleton");
@@ -38,6 +39,7 @@ class ProductList extends HTMLElement {
 
   render() {
     this.innerHTML = "";
+    this.setAttribute("class", "product-list-layout");
     this._products.map((elements) => {
       const product = document.createElement("product-item");
       product.classList.add("product-item");
