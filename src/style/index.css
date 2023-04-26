@@ -1,0 +1,43 @@
+@import "./hero-section.css";
+@import "./footer.css";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+
+.modal-card-body {
+  border-radius: 0 0 6px 6px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3488ce;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3e56c4;
+}
+
+.notification {
+  position: fixed !important;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  z-index: 999;
+}

@@ -1,0 +1,40 @@
+.product-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  padding: 1rem;
+}
+.product-title {
+  height: 15px;
+  overflow-y: hidden;
+  margin-bottom: 0 !important;
+}
+.product-price {
+  display: none;
+}
+.card {
+  position: relative;
+}
+.card-footer {
+  position: relative;
+  bottom: 0;
+}
+.card-content {
+  padding: 0.75rem;
+}
+
+.product-card-action {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .product-title {
+    margin-bottom: 1.5rem !important;
+  }
+  .product-price {
+    font-size: 14px !important;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+}

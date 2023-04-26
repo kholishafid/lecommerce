@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icon/smile.svg"
+      type="image/x-icon"
+    />
+    <title>Lecommerce</title>
+  </head>
+  <body>
+    <nav
+      class="navbar container py-2 px-4"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-start">
+        <div class="navbar-item">
+          <h1 class="has-text-weight-bold is-size-5">Lecommerce</h1>
+        </div>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <button class="button is-rounded" id="checkCart">
+            <img src="./assets/icon/shopping-cart.svg" alt="cart" />
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main class="container px-4">
+      <div class="hero is-primary is-medium">
+        <div class="hero-body">
+          <img
+            src="./assets/image/ilustration-2.png"
+            alt="ilustration-1"
+            class="hero-image"
+          />
+          <div class="title is-size-4">The things you love.</div>
+        </div>
+      </div>
+      <form class="search-bar">
+        <input
+          class="input"
+          type="text"
+          placeholder="Search product..."
+          name="search"
+        />
+        <button class="button is-primary">Search</button>
+      </form>
+      <div>
+        <product-list class="product-list-layout"></product-list>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <img
+          src="./assets/image/ilustration-1.png"
+          alt="ilustration-1"
+          class="footer-image"
+        />
+        <div>
+          <p class="text is-size-5 has-text-weight-bold">
+            2023 &copy; Lecommerce
+          </p>
+          <p class="text is-size-6">Happy Shopping</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

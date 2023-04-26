@@ -1,0 +1,30 @@
+.product-skeleton {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0px 0 1px rgba(10, 10, 10, 0.02);
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.product-skeleton-load {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.spinner {
+  animation: infinite spin 1s linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

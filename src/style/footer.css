@@ -1,0 +1,24 @@
+.footer {
+  background-color: hsl(0, 0%, 21%) !important;
+  margin-top: 2rem;
+  padding: 1rem !important;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .text {
+  color: white;
+}
+.footer-image {
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
