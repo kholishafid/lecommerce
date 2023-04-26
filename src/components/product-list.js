@@ -8,6 +8,17 @@ class ProductList extends HTMLElement {
     this.renderSkeleton();
   }
 
+  set notFound(message) {
+    this.renderSkeleton();
+    this.removeAttribute("class");
+    this.innerHTML = `
+      <div class="hero is-warning py-4 ">
+        <p class="has-text-centered is-size-2"><strong>?</strong></p>
+        <p class="mt-1 has-text-centered">${message}</p>
+      </div>
+    `;
+  }
+
   set products(products) {
     this._products = products;
     this.render();

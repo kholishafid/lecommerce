@@ -15,6 +15,9 @@ const filterProductByTitle = (key) => {
       return filteredProduct.push(value);
     }
   });
+  if (filteredProduct.length === 0)
+    return (productList.notFound = `${key} not found.`);
+
   productList.products = filteredProduct;
 };
 
